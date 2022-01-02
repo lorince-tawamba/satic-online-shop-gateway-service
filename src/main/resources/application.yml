@@ -1,0 +1,10 @@
+# =================================
+# SERVICE CONFIGURATION
+# =================================
+spring:
+  application:
+    name: SATIC-ONLINE-SHOP-GATEWAY-SERVICE
+  config:
+    import: optional:configserver:http://localhost:8888
+    profiles:
+      active: prod
